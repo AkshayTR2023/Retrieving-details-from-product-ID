@@ -1,0 +1,15 @@
+-- -------------MySQL Commands----------------------------------
+CREATE database ecom;
+USE ecom;
+
+CREATE TABLE products (
+  productId INT NOT NULL AUTO_INCREMENT,
+  productName VARCHAR(255) NOT NULL,
+  productPrice DOUBLE NOT NULL,
+  PRIMARY KEY (productId)
+);
+INSERT INTO products ( productName, productPrice) VALUES
+('Dell XPS 15 9530',  249990),
+('ASUS ROG Strix G18',169990),
+('Apple MacBook Air M1', 82900),
+('Samsung Galaxy Book 2',105990);
